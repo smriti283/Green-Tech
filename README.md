@@ -38,7 +38,7 @@ Our outcome of interest is the number of patents produced within a given city as
 
 We defined green technology with by applying the NLP model Latent Dirichlet Allocation (LDA), also known as topic modeling. We made all the abstracts go through the steps of stemming, lemmatization and vectorization and segregated them in 10 topics, that gave us following green-tech keywords from the entire corpus of words.
 
-![alt text]
+<img width="634" alt="Screen Shot 2023-02-08 at 6 39 08 PM" src="https://user-images.githubusercontent.com/78453405/217704177-67b4bc56-5842-45e3-a585-936a10b0224a.png">
 
 Using the grant abstracts and the above keywords, we filtered our dataset for green grants.
 
@@ -48,8 +48,6 @@ This yielded 30,274 or 3.8% of all available grants. The grants are approximatel
 
 The grants are then linked via record linkage to the patents. Linkage is performed by matching any of the PI (primary or secondary) by their phonetic name and organization to the phonetic inventor name and assignee organization on the patents.
 
-![alt text]
-
 We used the New York State Identification and Intelligence System (NYSIIS) phonetic transformation, a commonly used rule-based algorithm.
 
 Significant data munging was required to structure the secondary PIs for the join; ultimately we were able to expand the grant dataset so each row contained a unique PI and then later remove duplicates after the join. Matching on all PIs over just the primary resulted in approximately 400 additional matches.
@@ -58,23 +56,21 @@ Finally, we only considered patents that occur at least one year after the grant
 
 The three metrics are then summarized at the city level. 
 
+The process diagram is as below: 
+
+<img width="404" alt="Screen Shot 2023-02-08 at 6 39 33 PM" src="https://user-images.githubusercontent.com/78453405/217704333-a57f5716-f96b-4c88-b393-6e9cf7c5ff78.png">
+
 ### 3. Visualizations of the Results
 
-From our initial results, we found that there are a high number of PIs concentrated mainly in the East Coast, Midwest and West Coast. 
+From our initial results, we found that there are a high number of PIs concentrated mainly in the East Coast, Midwest and West Coast (refer Fig 2 below). However, we also found a fair amount of PIs in states such as Texas, Minnesota, Colorado etc., likely due to the presence of large state universities in these areas.
 
-However, we also found a fair amount of PIs in states such as Texas, Minnesota, Colorado etc., likely due to the presence of large state universities in these areas.
+The trend for funding towards green technology research (refer Fig 3 below) follows a similar pattern i.e, highest where the most no. of PIs are concentrated. But we also found large amounts of funding in places having small no. of PIs, suggesting that the correlation between no. of PIs and amount of green funding may not be the strongest.
 
-![alt text]
-
-The trend for funding towards green technology research follows a similar pattern i.e, highest where the most no. of PIs are concentrated.
-
-But we also found large amounts of funding in places having small no. of PIs, suggesting that the correlation between no. of PIs and amount of green funding may not be the strongest.
-
-![alt text]
+<img width="1293" alt="Screen Shot 2023-02-08 at 6 40 55 PM" src="https://user-images.githubusercontent.com/78453405/217704714-e1f602f8-df72-4948-b26b-e195d66b6119.png">
 
 However, most green grants were found to have not been converted to patents, as can be seen below. This is explained by the fact that we found ~ 30,000 grants awarded to green tech research, however, only ~1400 were converted to patents.
 
-![alt text]
+<img width="855" alt="Screen Shot 2023-02-08 at 6 41 20 PM" src="https://user-images.githubusercontent.com/78453405/217705061-fb93b6f3-d504-4082-9b4b-1fca222b5963.png">
 
 ### 4. Verifying by Multivariate Regression Analysis
 
