@@ -22,6 +22,23 @@ Our outcome of interest is the number of patents produced within a given city as
 
 ![alt text]
 
+#### Some Definitions
+- **Network:** The principle investigators & associated researchers located within a given city.
+- **Grant Funding:** The amount of money awarded in grant funding to researchers for a given city,  measured in dollars.
+- **Innovation:** The number of patents produced.
+
+### Step 1: Identify Green Technology Grants
+
+We defined green technology with by applying the NLP model Latent Dirichlet Allocation (LDA), also known as topic modeling. We made all the abstracts go through the steps of stemming, lemmatization and vectorization and segregated them in 10 topics, that gave us following green-tech keywords from the entire corpus of words.
+
+![alt text]
+
+Using the grant abstracts and the above keywords, we filtered our dataset for green grants.
+
+This yielded 30,274 or 3.8% of all available grants. The grants are approximately uniformly distributed across 2010-2018.
+
+### Step 2: Record Linkage of Grants and Patents
+
 
 
 
