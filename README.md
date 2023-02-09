@@ -25,7 +25,7 @@ Our outcome of interest is the number of patents produced within a given city as
 3. Visualize the results
 4. Hypothesis Testing
 
-![alt text](Images/Screen Shot 2023-02-08 at 5.59.30 PM.png)
+<img width="932" alt="Screen Shot 2023-02-08 at 5 59 30 PM" src="https://user-images.githubusercontent.com/78453405/217702765-f2df3578-1544-4266-84fd-5822e661458d.png">
 
 #### Some Definitions
 - **Network:** The principle investigators & associated researchers located within a given city.
