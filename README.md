@@ -80,7 +80,26 @@ However, most green grants were found to have not been converted to patents, as 
 
 To answer our research question, we wish to understand not the geospatial relationship but the relationship between grant funding, number of PIs, and number of patents. We find this relationship by applying multivariate regression analysis. 
 
+#### More PIs, More Patents
 
+- More PIs in a city is slightly but positively correlated with the number of patents
+- Does not account for city population and density
+- CT researchers may not think of NJ researchers as part of their network
+
+![alt text]
+
+#### More Grants $, More Patents
+
+- More grant money is also associated with more patents produced.
+- Multivariate regression indicates that both n PIs and grant $ are positively associated with additional patents -- however effect size is small
+
+![alt text]
+
+The multivariate regression including all three variables confirms the relationship. The number of PIs and the grant cost are both positively and significantly associated with the total patents produced in a city. 
+
+![alt text]
+
+Despite the weak effect size, evidenced by the small coefficient estimates, we believe these results support our theory of change. A larger PI network is associated with a greater number of patents produced, holding grant funding constant.
 
 ## Policy Implications
 
